@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de textos</title>
-    <link rel="styleSheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
 </head>
 <body>
     <header>
-        <img src="../assets/logo.png">
+        <img src="../assets/logo.png" alt="Logo del encriptador de textos">
     </header>
     
     <main>
         <form class="formEncryption">
-            <textarea class="textInput" name="mensaje" id="" placeholder="Ingrese el texto aqui"></textarea>
-                <div class="info">
-                    <img src="../assets/infoIcon.png" alt="alert icon"><span>Solo letras minúsculas y sin acentos</span>
-                </div>
+            <textarea class="textInput" name="mensaje" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="info">
+                <img src="../assets/infoIcon.png" alt="Ícono de información">
+                <span>Solo letras minúsculas y sin acentos</span>
+            </div>
             <div class="buttons">
                 <input class="code" type="submit" value="Encriptar">
                 <input class="encode" type="submit" value="Desencriptar">
             </div>
         </form>
         <aside class="result">
-            <img src="../assets/image.png" alt="Encriptador Alura" class="image">
+            <img src="../assets/image.png" alt="Imagen del encriptador" class="image">
             <div class="encryptionContainer">
-                <h3 class="titleResult"> Ningún mensaje fue encontrado</h3>
-                <p class="textResult"> Ingresa el texto que desees encriptar o desencriptar.</p>
+                <h3 class="titleResult">Ningún mensaje fue encontrado</h3>
+                <p class="textResult">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <img src="../assets/checkIcon.png" alt="Ícono de verificación" class="checkIcon hidden">
                 <button class="copy">Copiar</button>
             </div>
         </aside>
     </main>
-    <script src="./script.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
